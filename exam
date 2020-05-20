@@ -1,0 +1,38 @@
+ Question 1
+ 
+   76  git clone -- https://github.com/mdn/beginner-html-site-styled
+   77  git clone -- https://github.com/microsoft/project-html-website
+   78 
+   88  vim Dockerfile
+   89  vim yogi.sh
+   90  ls
+   91  vim Dockerfile
+   92  vim .dockerignore
+   93  ls -l beginner-html-site-styled -a
+   94  docker build -t yuktadh/may2020q1:v1 .
+   95  docker push yuktadh/may2020q1:v1
+   96  docker push yuktadh/yuktadh/may2020q1:v1
+   97  docker push yuktadh/may2020q1
+   98  history
+   99  docker login
+  100  docker push yuktadh/yuktadh/may2020q1:v1
+  101  docker push yuktadh/may2020q1:v1
+  102  history
+ 
+ Question 2
+  
+  
+   55  kubectl run adhocpod1 --image=nginx --port=80 --dry-run=client -o yaml  >q2.yaml
+   56  vim q2.yaml
+   57  kubectl create -f q2.yaml
+  
+   60  kubectl get po
+   61  
+   62  kubectl create service nodeport q2svcyukta --tcp=80 --dry-run=client -o yaml > pods1.yaml
+   63  vim pods1.yaml
+   64 
+   67  kubectl get po --show-labels
+   68  kubectl get svc
+   69  kubectl create -f pods1.yaml
+   70  
+   71  kubectl get svc
